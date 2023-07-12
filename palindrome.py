@@ -17,7 +17,7 @@ RACECAR is more than 6 letters long and is a palindrome, unlock the car”. Writ
 script that it returns “True” if the given password unlocks the car (is more than 6
 characters long and is a palindrome) and returns “False” if the given password is invalid.
 
-Extra Challenge: Solve this problem in 1 line of code! (Excluding function definitions) 
+Extra Challenge: Solve this problem in 1 line of code! (Excluding function definitions)
 
 Test Cases:
 Input: “racecar”    Output: True
@@ -36,10 +36,10 @@ class Solution:
             for x in s:
                 reverse = x + reverse
 
-            if s == reverse:
+            if s == reverse and len(s) > 6:
                 return True
-
-            return False
+            else:
+                return False
 
 
             pass
